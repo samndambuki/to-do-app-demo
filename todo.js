@@ -34,9 +34,27 @@ let data = {};
 let acceptData = () => {
     data["text"] = input.value;
     console.log(data);
+    //fire createToDo function
+    createToDo();
 };
 
 
+let createToDo = () => {
+    todos.innerHTML +=`
+    <div>
+    <p>${data.text}</p>
+    <span class="options">
+    <i onClick="editToDo(this)" class="fas fa-edit"><i/>
+    <i onClick="deleteToDo(this)" class="fas fa-trash-alt"><i/>
+    </span>
+    </div>
+    `;
+    input.value="";
+};
+
+let deleteToDo  = (e) => {
+    e.parentElement.parentElement.remove();
+};
 
 
 

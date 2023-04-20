@@ -52,11 +52,15 @@ let createToDo = () => {
     input.value="";
 };
 
+
 let deleteToDo  = (e) => {
     e.parentElement.parentElement.remove();
 };
 
-
+let editToDo = (e) => {
+    input.value  = e.parentElement.previousElementSibling.innerHTML;
+    e.parentElement.parentElement.remove();
+}
 
 
 

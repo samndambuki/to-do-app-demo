@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do app demo</title>
+    
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="styles.css"/>
+
+
+<body>
+    <h1>To do app</h1>
+    <div class="container">
+
+        <div class="container1">
+            <form id="form">
+                <label for="todo">Enter what you want to do</label>
+                <br><br>
+                <textarea name="todo" id="input" cols="40" rows="20"></textarea>
+                <br><br>
+                <div id="msg"></div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="container2">
+            <h1>Your todos</h1>
+            <div id="todos">
+                    <p>Task 1</p>
+                    <span class="options">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i> 
+                    </span>
+               
+
+                <div>
+                    <p>Task 2</p>
+                    <span class="options">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

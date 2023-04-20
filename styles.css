@@ -1,0 +1,33 @@
+.body{
+    font-family: sans-serif;
+    margin: 0 50px;
+}
+
+.container{
+    display: flex;
+    gap: 70px;
+}
+
+#todos{
+    width: 500px;
+}
+
+
+i{
+    cursor: pointer;
+}
+
+#todos div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options{
+    display: flex;
+    gap: 25px;
+}
+
+#msg{
+    color: red;
+}
